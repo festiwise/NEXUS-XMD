@@ -1,16 +1,1 @@
-const fs = require('fs');
-const path = require('path');
-const config = require('../config')
-const {cmd , commands} = require('../command')
-
-
-//auto recording
-cmd({
-  on: "body"
-},    
-async (conn, mek, m, { from, body, isOwner }) => {       
- if (config.AUTO_RECORDING === 'true') {
-                await conn.sendPresenceUpdate('recording', from);
-            }
-         } 
-   );
+constfs=require('fs');constpath=require('path');constconfig=require('../config')const{cmd,commands}=require('../command')//autorecordingcmd({on:"body"},async(conn,mek,m,{from,body,isOwner})=>{if(config.AUTO_RECORDING==='true'){awaitconn.sendPresenceUpdate('recording',from);}});
